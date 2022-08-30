@@ -1,3 +1,10 @@
+:root {
+  --color-700: #2c2c96;
+  --color-500: #7733e7;
+  --color-300: #e78686;
+  --color-100: #f7bef7;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -12,9 +19,71 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Heebo", sans-serif;
+  color: var(--color-700);
+  background-color: var(--color-100);
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
 }
 
 header {
   text-align: center;
+  background-color: var(--color-300);
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+
+header > h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+header > p {
+  font-weight: bold;
+  font-size: clamp(0.75rem, 3vw, 1rem);
+}
+
+#img-div {
+  margin: 0 auto;
+  text-align: center;
+  width: min(720px, 100%);
+}
+
+#image {
+  width: 100%;
+}
+
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+li:first-of-type,
+* + li {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--color-500);
+}
+
+ul {
+  list-style: none;
 }
