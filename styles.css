@@ -28,12 +28,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 75%;
   margin: 0 auto;
 }
 
 header {
   text-align: center;
+  width: 100%;
   background-color: var(--color-300);
   margin: 1rem 0;
   border-radius: 1rem;
@@ -49,13 +51,19 @@ header > p {
 }
 
 #img-div {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: min(720px, 100%);
 }
 
 #image {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 #tribute-info {
